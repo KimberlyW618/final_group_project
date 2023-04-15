@@ -2,7 +2,7 @@
 
 Proposal Draft: 
 
-The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
+We have a four people group.The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
  
 Our null hypothesis is that since income has not risen according to inflation, the cost of college should not have either, the cost of college should not be related to income.
  
