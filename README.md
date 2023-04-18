@@ -1,4 +1,4 @@
-# final_group_project
+.# final_group_project
 
 Proposal Draft: 
 
@@ -13,6 +13,6 @@ Our alternative hypothesis is that since college financial aid is all income bas
 Graphs to create:
 Look at different geographies and then compare the data of cost of living and salaries when compared to schools in that area
 Map looking at cost of living when compared to income level (wealth) and cost of college across US
-Looking at income vs. wealth and how that compares to the rise 
+Looking at income vs. wealth and how that compares to the rise. 
 
 Additionally we will talk about the unemployment rate and how that factors in and that the data is not reliable.
