@@ -1,0 +1,18 @@
+create table wealth(
+year int, 
+	yearlyranking int, 
+	Name varchar(50),
+	Networth_US_billion float, 
+	Age int, 
+	Nationality varchar(50),
+	Sources_of_wealth varchar(100)
+);
+
+
+create table college_tution(
+Year int,
+	State varchar(50)	,
+	Type varchar(50),
+	Length varchar(20),
+	Expense_Value  int
+	); 
