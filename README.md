@@ -54,6 +54,13 @@ These are the links and sources to the data we started with.
     - Source (type):
 - Unemployment 
     - Source (type):
+- Labor-Force_Participation 
+    - Source (type):
+- Wages_Top_Bottom  
+    - Source (type):
+- Wages_By_Ed  
+    - Source (type):
+
  
 ### Clean Data Used 
 This data we have cleaned and manipulated so it will work for our project.   
@@ -63,19 +70,17 @@ This data we have cleaned and manipulated so it will work for our project.
 - Wealth (csv): 
 - Inflation (csv): 
 - Unemployment (csv): 
-
-# Results  
-
-## Generated Code:
-
-### Phase 1
-- Python:
-- HTML:
-
-### Phase 2
+- Labor-Force_Participation (csv): 
+- Wages_Top_Bottom (csv): 
+- Wages_By_Ed (csv):
 
 
-## Summary of Findings 
- 
-### Images
+# Results:  
+
+## Phase 1 Deliverables
+- Python & HTML:[code](code)
+- Database Prep: [database]
+- ERD: [database/ERD](database/ERD)
+### ERD Image
+![database/ERD/ERD_db_mockup.png](database/ERD/ERD_db_mockup.png)
 
