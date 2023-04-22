@@ -10,7 +10,7 @@ Our alternative hypothesis is that since college financial aid is all income bas
  
  We will also look at the different tiers of universities/colleges and salaries guaranteed after graduation and how that relates to income and inflation. 
 
-Graphs to create:
+### Graphs to create:
 Look at different geographies and then compare the data of cost of living and salaries when compared to schools in that area
 Map looking at cost of living when compared to income level (wealth) and cost of college across US
 Looking at income vs. wealth and how that compares to the rise. 
@@ -39,7 +39,6 @@ Additionally we will talk about the unemployment rate and how that factors in an
 - SQL
 - HTML
 
- 
 ### Raw Data & Sources
 These are the links and sources to the data we started with.  
 - Tuition
@@ -54,6 +53,13 @@ These are the links and sources to the data we started with.
     - Source (type):
 - Unemployment 
     - Source (type):
+- Labor-Force_Participation 
+    - Source (type):
+- Wages_Top_Bottom  
+    - Source (type):
+- Wages_By_Ed  
+    - Source (type):
+
  
 ### Clean Data Used 
 This data we have cleaned and manipulated so it will work for our project.   
@@ -63,19 +69,19 @@ This data we have cleaned and manipulated so it will work for our project.
 - Wealth (csv): 
 - Inflation (csv): 
 - Unemployment (csv): 
-
-# Results  
-
-## Generated Code:
-
-### Phase 1
-- Python:
-- HTML:
-
-### Phase 2
+- Labor-Force_Participation (csv): 
+- Wages_Top_Bottom (csv): 
+- Wages_By_Ed (csv):
 
 
-## Summary of Findings 
+# Results:  
+
+## Phase 1 Deliverables
+- Python & HTML:[code](code)
+- Database Prep: [database]
+- ERD: [database/ERD](database/ERD)
+### ERD Image
+![database/ERD/ERD_db_mockup.png](database/ERD/ERD_db_mockup.png)
+
+
  
-### Images
-
