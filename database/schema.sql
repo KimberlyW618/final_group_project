@@ -5,8 +5,8 @@
 
 CREATE TABLE "Tuition_87" (
     "year" INT   NOT NULL,
-    "public" DECIMAL(20,2)   NOT NULL,
-    "private" DECIMAL(20,2)   NOT NULL,
+    "public" FLOAT   NOT NULL,
+    "private" FLOAT   NOT NULL,
     CONSTRAINT "pk_Tuition_87" PRIMARY KEY (
         "year"
      )
@@ -15,9 +15,9 @@ CREATE TABLE "Tuition_87" (
 CREATE TABLE "Tuition_ST_94" (
     "year" INT   NOT NULL,
     "state" VARCHAR   NOT NULL,
-    "public_instate" DECIMAL(20,2)   NOT NULL,
-    "public_out_of_state" DECIMAL(20,2)   NOT NULL,
-    "private" DECIMAL(20,2)   NOT NULL,
+    "public_instate" FLOAT   NOT NULL,
+    "public_out_of_state" FLOAT   NOT NULL,
+    "private" FLOAT   NOT NULL,
     CONSTRAINT "pk_Tuition_ST_94" PRIMARY KEY (
         "year"
      )
@@ -25,7 +25,7 @@ CREATE TABLE "Tuition_ST_94" (
 
 CREATE TABLE "Income_US" (
     "year" INT   NOT NULL,
-    "avg_yearly_income_us" DECIMAL(20,2)   NOT NULL,
+    "avg_yearly_income_us" FLOAT   NOT NULL,
     CONSTRAINT "pk_Income_US" PRIMARY KEY (
         "year"
      )
@@ -34,7 +34,7 @@ CREATE TABLE "Income_US" (
 CREATE TABLE "Income_ST" (
     "year" INT   NOT NULL,
     "state" VARCHAR   NOT NULL,
-    "avg_yearly_income_st" DECIMAL(20,2)   NOT NULL,
+    "avg_yearly_income_st" FLOAT   NOT NULL,
     CONSTRAINT "pk_Income_ST" PRIMARY KEY (
         "year"
      )
@@ -44,8 +44,8 @@ CREATE TABLE "Wealth" (
     "year" INT   NOT NULL,
     "yearly_ranking" INT   NOT NULL,
     "name" VARCHAR   NOT NULL,
-    "net_worth_USDn_billion" DECIMAL(20,2)   NOT NULL,
-    "age" INT   NOT NULL,
+    "net_worth_USDn_billion" FLOAT   NOT NULL,
+    "age" VARCHAR   NOT NULL,
     "wealth_source" VARCHAR   NOT NULL,
     CONSTRAINT "pk_Wealth" PRIMARY KEY (
         "year"
@@ -89,11 +89,11 @@ CREATE TABLE "Unemployment" (
 
 CREATE TABLE "Wages_By_Ed" (
     "year" INT   NOT NULL,
-    "less_then_HS" DECIMAL(20,2)   NOT NULL,
-    "high_school" DECIMAL(20,2)   NOT NULL,
-    "some_college" DECIMAL(20,2)   NOT NULL,
-    "bachelor_degree" DECIMAL(20,2)   NOT NULL,
-    "advanced_degree" DECIMAL(20,2)   NOT NULL,
+    "less_then_HS" FLOAT   NOT NULL,
+    "high_school" FLOAT   NOT NULL,
+    "some_college" FLOAT   NOT NULL,
+    "bachelor_degree" FLOAT   NOT NULL,
+    "advanced_degree" FLOAT   NOT NULL,
     "less_then_hs_share" FLOAT   NOT NULL,
     "high_school_share" FLOAT   NOT NULL,
     "some_college_share" FLOAT   NOT NULL,
@@ -106,14 +106,14 @@ CREATE TABLE "Wages_By_Ed" (
 
 CREATE TABLE "Wages_Top_Bottom" (
     "year" INT   NOT NULL,
-    "bottom_90_avg" DECIMAL(20,2)   NOT NULL,
-    "90-95_avg" DECIMAL(20,2)   NOT NULL,
-    "95-99_avg" DECIMAL(20,2)   NOT NULL,
-    "90-99_avg" DECIMAL(20,2)   NOT NULL,
-    "top_5p_avg" DECIMAL(20,2)   NOT NULL,
-    "99-99-9_avg" DECIMAL(20,2)   NOT NULL,
-    "upper_0-1_avg" DECIMAL(20,2)   NOT NULL,
-    "99-100_avg" DECIMAL(20,2)   NOT NULL,
+    "bottom_90_avg" FLOAT   NOT NULL,
+    "90-95_avg" FLOAT   NOT NULL,
+    "95-99_avg" FLOAT   NOT NULL,
+    "90-99_avg" FLOAT   NOT NULL,
+    "top_5p_avg" FLOAT   NOT NULL,
+    "99-99-9_avg" FLOAT   NOT NULL,
+    "upper_0-1_avg" FLOAT   NOT NULL,
+    "99-100_avg" FLOAT   NOT NULL,
     CONSTRAINT "pk_Wages_Top_Bottom" PRIMARY KEY (
         "year"
      )
@@ -153,8 +153,8 @@ CREATE TABLE "Underemplyment" (
 
 CREATE TABLE "Student_Loan_Debt" (
     "year_grad" INT   NOT NULL,
-    "debt_at_grad" INT   NOT NULL,
-    "adjusted_for_inflation" INT   NOT NULL,
+    "debt_at_grad" FLOAT   NOT NULL,
+    "adjusted_for_inflation" FLOAT   NOT NULL,
     CONSTRAINT "pk_Student_Loan_Debt" PRIMARY KEY (
         "year_grad"
      )
