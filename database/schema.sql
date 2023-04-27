@@ -16,8 +16,8 @@ CREATE TABLE "Tuition_ST_94" (
     "year" INT   NOT NULL,
     "state" VARCHAR   NOT NULL,
     "public_instate" DECIMAL(20,2)   NOT NULL,
-    "public_out_of_state" DECIMAL(20,2),
-    "private" DECIMAL(20,2),
+    "public_out_of_state" DECIMAL(20,2)   NOT NULL,
+    "private" DECIMAL(20,2)   NOT NULL,
     CONSTRAINT "pk_Tuition_ST_94" PRIMARY KEY (
         "year"
      )
@@ -151,6 +151,15 @@ CREATE TABLE "Underemplyment" (
      )
 );
 
+CREATE TABLE "Student_Loan_Debt" (
+    "year_grad" INT   NOT NULL,
+    "debt_at_grad" INT   NOT NULL,
+    "adjusted_for_inflation" INT   NOT NULL,
+    CONSTRAINT "pk_Student_Loan_Debt" PRIMARY KEY (
+        "year_grad"
+     )
+);
+
 ALTER TABLE "Tuition_87" ADD CONSTRAINT "fk_Tuition_87_year" FOREIGN KEY("year")
 REFERENCES "Tuition_ST_94" ("");
 
@@ -185,5 +194,8 @@ ALTER TABLE "Labor-Force_Participation" ADD CONSTRAINT "fk_Labor-Force_Participa
 REFERENCES "Tuition_87" ("");
 
 ALTER TABLE "Underemplyment" ADD CONSTRAINT "fk_Underemplyment_year" FOREIGN KEY("year")
+REFERENCES "Tuition_87" ("");
+
+ALTER TABLE "Student_Loan_Debt" ADD CONSTRAINT "fk_Student_Loan_Debt_year_grad" FOREIGN KEY("year_grad")
 REFERENCES "Tuition_87" ("");
 
