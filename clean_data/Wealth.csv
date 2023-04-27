@@ -1,0 +1,186 @@
+year,yearly_ranking,name,net_worth_USDn_billion,age,wealth_source
+2022,1,Elon Musk,219000000000.00,50,"Tesla, SpaceX"
+2022,2,Jeff Bezos,177000000000.00,58,Amazon
+2022,4,Bill Gates,129000000000.00,66,Microsoft
+2022,5,Warren Buffett,118000000000.00,91,Berkshire Hathaway
+2022,6,Larry Page,111000000000.00,49,Alphabet Inc.
+2022,7,Sergey Brin,107000000000.00,48,Alphabet Inc.
+2022,8,Larry Ellison,106000000000.00,77,Oracle Corporation
+2022,9,Steve Ballmer,91400000000.00,66,Microsoft
+2021,1,Jeff Bezos,177000000000.00,57,Amazon
+2021,2,Elon Musk,151000000000.00,49,"Tesla, SpaceX"
+2021,4,Bill Gates,124000000000.00,65,Microsoft
+2021,5,Mark Zuckerberg,97000000000.00,36,Meta Platforms
+2021,6,Warren Buffett,96000000000.00,90,Berkshire Hathaway
+2021,7,Larry Ellison,93000000000.00,76,Oracle Corporation
+2021,8,Larry Page,91500000000.00,48,Alphabet Inc.
+2021,9,Sergey Brin,89000000000.00,47,Alphabet Inc.
+2020,1,Jeff Bezos,113000000000.00,56,Amazon
+2020,2,Bill Gates,98000000000.00,64,Microsoft
+2020,4,Warren Buffett,67500000000.00,89,Berkshire Hathaway
+2020,5,Larry Ellison,59000000000.00,75,Oracle Corporation
+2020,7,Mark Zuckerberg,54700000000.00,35,"Facebook, Inc."
+2020,8,Jim Walton,54600000000.00,71,Walmart
+2020,9,Alice Walton,54400000000.00,70,Walmart
+2020,10,S. Robson Walton,54100000000.00,77,Walmart
+2019,1,Jeff Bezos,131000000000.00,55,Amazon
+2019,2,Bill Gates,96500000000.00,63,Microsoft
+2019,3,Warren Buffett,82500000000.00,88,Berkshire Hathaway
+2019,7,Larry Ellison,62500000000.00,74,Oracle Corporation
+2019,8,Mark Zuckerberg,62300000000.00,34,"Facebook, Inc."
+2019,9,Michael Bloomberg,55500000000.00,77,Bloomberg L.P.
+2019,10,Larry Page,50800000000.00,45,Alphabet Inc.
+2018,1,Jeff Bezos,112000000000.00,54,Amazon
+2018,2,Bill Gates,90000000000.00,62,Microsoft
+2018,3,Warren Buffett,84000000000.00,87,Berkshire Hathaway
+2018,5,Mark Zuckerberg,71000000000.00,33,"Facebook, Inc."
+2018,8,Charles Koch,60000000000.00,82,Koch Industries
+2018,8,David Koch,60000000000.00,77,Koch Industries
+2018,10,Larry Ellison,58500000000.00,73,Oracle Corporation
+2017,1,Bill Gates,86000000000.00,61,Microsoft
+2017,2,Warren Buffett,75600000000.00,86,Berkshire Hathaway
+2017,3,Jeff Bezos,72800000000.00,53,Amazon
+2017,5,Mark Zuckerberg,56000000000.00,32,"Facebook, Inc."
+2017,7,Larry Ellison,52200000000.00,72,Oracle Corporation
+2017,8,Charles Koch,48300000000.00,81,Koch Industries
+2017,8,David Koch,48300000000.00,76,Koch Industries
+2017,10,Michael Bloomberg,47500000000.00,75,Bloomberg L.P.
+2016,1,Bill Gates,75000000000.00,60,Microsoft
+2016,3,Warren Buffett,60800000000.00,85,Berkshire Hathaway
+2016,5,Jeff Bezos,45200000000.00,52,Amazon
+2016,6,Mark Zuckerberg,44600000000.00,31,"Facebook, Inc."
+2016,7,Larry Ellison,43600000000.00,71,Oracle Corporation
+2016,8,Michael Bloomberg,40000000000.00,74,Bloomberg L.P.
+2016,9,Charles Koch,39600000000.00,80,Koch Industries
+2016,9,David Koch,39600000000.00,75,Koch Industries
+2015,1,Bill Gates,79200000000.00,59,Microsoft
+2015,3,Warren Buffett,72700000000.00,84,Berkshire Hathaway
+2015,5,Larry Ellison,54300000000.00,70,Oracle Corporation
+2015,6,Charles Koch,42900000000.00,79,Koch Industries
+2015,6,David Koch,42900000000.00,74,Koch Industries
+2015,8,Christy Walton,41700000000.00,66,Walmart
+2015,9,Jim Walton,40600000000.00,66,Walmart
+2014,1,Bill Gates,76000000000.00,58,Microsoft
+2014,4,Warren Buffett,58200000000.00,83,Berkshire Hathaway
+2014,5,Larry Ellison,48000000000.00,70,Oracle Corporation
+2014,6,Charles Koch,40000000000.00,78,Koch Industries
+2014,6,David Koch,40000000000.00,73,Koch Industries
+2014,8,Sheldon Adelson,38000000000.00,80,Las Vegas Sands
+2014,9,Christy Walton & family,36700000000.00,65,Walmart
+2014,10,Jim Walton,34700000000.00,65,Walmart
+2013,2,Bill Gates,67000000000.00,57,Microsoft
+2013,4,Warren Buffett,53500000000.00,82,Berkshire Hathaway
+2013,5,Larry Ellison,43000000000.00,68,Oracle Corporation
+2013,6,Charles Koch,34000000000.00,77,Koch Industries
+2013,6,David Koch,34000000000.00,72,Koch Industries
+2012,2,Bill Gates,61000000000.00,56,Microsoft
+2012,3,Warren Buffett,44000000000.00,81,Berkshire Hathaway
+2012,6,Larry Ellison,36000000000.00,67,Oracle Corporation
+2011,2,Bill Gates,56000000000.00,55,Microsoft
+2011,3,Warren Buffett,50000000000.00,80,Berkshire Hathaway
+2011,5,Larry Ellison,39500000000.00,66,Oracle Corporation
+2011,10,Christy Walton & family,26500000000.00,62,Walmart
+2010,2,Bill Gates,53000000000.00,54,Microsoft
+2010,3,Warren Buffett,47000000000.00,79,Berkshire Hathaway
+2010,6,Larry Ellison,28000000000.00,66,Oracle Corporation
+2009,1,Bill Gates,40000000000.00,53,Microsoft
+2009,2,Warren Buffett,37000000000.00,78,Berkshire Hathaway
+2009,4,Larry Ellison,22500000000.00,64,Oracle Corporation
+2008,1,Warren Buffett,62000000000.00,77,Berkshire Hathaway
+2008,3,Bill Gates,58000000000.00,52,Microsoft
+2007,1,Bill Gates,56000000000.00,51,Microsoft
+2007,2,Warren Buffett,52000000000.00,76,Berkshire Hathaway
+2007,6,Sheldon Adelson,26500000000.00,73,Las Vegas Sands
+2006,1,Bill Gates,52000000000.00,50,Microsoft
+2006,2,Warren Buffett,42000000000.00,75,Berkshire Hathaway
+2006,6,Paul Allen,22000000000.00,53,Microsoft
+2005,1,Bill Gates,46500000000.00,49,Microsoft
+2005,2,Warren Buffett,44000000000.00,74,Berkshire Hathaway
+2005,7,Paul Allen,21000000000.00,52,Microsoft
+2005,9,Larry Ellison,18400000000.00,60,Oracle Corporation
+2005,10,S. Robson Walton,18300000000.00,61,Walmart
+2004,1,Bill Gates,46600000000.00,48,Microsoft
+2004,2,Warren Buffett,42900000000.00,73,Berkshire Hathaway
+2004,5,Paul Allen,21000000000.00,51,Microsoft
+2004,6,Alice Walton,20000000000.00,55,Wal-Mart
+2004,6,Helen Walton,20000000000.00,84,Wal-Mart
+2004,6,Jim Walton,20000000000.00,56,Wal-Mart
+2004,6,John Walton,20000000000.00,58,Wal-Mart
+2004,6,S. Robson Walton,20000000000.00,60,Wal-Mart
+2003,1,Bill Gates,40700000000.00,47,Microsoft
+2003,2,Warren Buffett,30500000000.00,72,Berkshire Hathaway
+2003,4,Paul Allen,20100000000.00,50,Microsoft
+2003,6,Larry Ellison,16600000000.00,58,Oracle Corporation
+2003,7,Alice Walton,16500000000.00,54,Wal-Mart
+2003,7,Helen Walton,16500000000.00,83,Wal-Mart
+2003,7,Jim Walton,16500000000.00,55,Wal-Mart
+2003,7,John Walton,16500000000.00,57,Wal-Mart
+2003,7,S. Robson Walton,16500000000.00,59,Wal-Mart
+2002,1,Bill Gates,52800000000.00,46,Microsoft
+2002,2,Warren Buffett,35000000000.00,71,Berkshire Hathaway
+2002,4,Paul Allen,25200000000.00,49,Microsoft
+2002,5,Larry Ellison,23500000000.00,57,Oracle Corporation
+2002,6,Jim Walton,20800000000.00,54,Wal-Mart
+2002,7,John Walton,20700000000.00,56,Wal-Mart
+2002,8,Alice Walton,20500000000.00,53,Wal-Mart
+2002,8,S. Robson Walton,20500000000.00,58,Wal-Mart
+2002,8,Helen Walton,20500000000.00,82,Wal-Mart
+2001,1,Bill Gates,58700000000.00,45,Microsoft
+2001,2,Warren Buffett,32300000000.00,70,Berkshire Hathaway
+2001,3,Paul Allen,30400000000.00,48,Microsoft
+2001,4,Larry Ellison,26000000000.00,56,Oracle Corporation
+2001,7,Jim Walton,18800000000.00,53,Wal-Mart
+2001,8,John Walton,18700000000.00,55,Wal-Mart
+2001,9,S. Robson Walton,18600000000.00,57,Wal-Mart
+2001,10,Alice Walton,18500000000.00,52,Wal-Mart
+2001,10,Helen Walton,18500000000.00,81,Wal-Mart
+2000,1,Bill Gates,60000000000.00,44,Microsoft
+2000,2,Larry Ellison,47000000000.00,55,Oracle Corporation
+2000,3,Paul Allen,28000000000.00,47,Microsoft
+2000,4,Warren Buffett,25600000000.00,69,Berkshire Hathaway
+2000,7,S. Robson Walton,20000000000.00,57,Wal-Mart
+2000,9,Michael Dell,19100000000.00,35,Dell
+1999,1,Bill Gates,90000000000.00,43,Microsoft
+1999,2,Warren Buffett,36000000000.00,68,Berkshire Hathaway
+1999,3,Paul Allen,30000000000.00,46,Microsoft
+1999,4,Steven Ballmer,19500000000.00,43,Microsoft
+1999,5,Philip Anschutz,16500000000.00,59,The Anschutz Corporation
+1999,6,Michael Dell,16500000000.00,34,Dell
+1999,7,S. Robson Walton,15800000000.00,55,Wal-Mart
+1998,1,Bill Gates,51000000000.00,43,Microsoft
+1998,2,Walton family,48000000000.00,,Wal-Mart
+1998,3,Warren Buffett,33000000000.00,67,Berkshire Hathaway
+1998,4,Paul Allen,21000000000.00,45,Microsoft
+1998,6,Jay and Robert Pritzker,13500000000.00,,Hyatt[48]
+1998,7,Forrest Mars Sr. & family,13500000000.00,94,"Mars, Inc.[49]"
+1997,1,Bill Gates,36400000000.00,42,Microsoft
+1997,2,Walton family,27600000000.00,,Wal-Mart
+1997,3,Warren Buffett,23200000000.00,66,Berkshire Hathaway
+1997,5,Paul Allen,14100000000.00,44,Microsoft
+1997,7,Haas family,12300000000.00,,Levi Strauss & Co[52]
+1997,8,Forrest Mars Sr. & family,12000000000.00,93,"Mars, Inc.[49]"
+1996,1,Walton family,22900000000.00,,Wal-Mart
+1996,2,Bill Gates,18000000000.00,41,Microsoft
+1996,3,Warren Buffett,15300000000.00,65,Berkshire Hathaway
+1995,1,Walton family,23500000000.00,,NaN
+1995,2,Bill Gates,12900000000.00,,NaN
+1995,3,Warren Buffett,10700000000.00,,NaN
+1994,1,Walton family,22600000000.00,,NaN
+1994,2,du Pont family,9000000000.00,,NaN
+1994,5,Bill Gates,8200000000.00,,NaN
+1994,6,Warren Buffett,7900000000.00,,NaN
+1993,1,Walton family,25300000000.00,,NaN
+1993,2,Mars family,9200000000.00,,NaN
+1993,4,du Pont family,8600000000.00,,NaN
+1993,6,Bill Gates,7400000000.00,,NaN
+1993,7,Samuel and Donald Newhouse,7000000000.00,,NaN
+1993,8,Sid and Lee Bass & brothers,6800000000.00,,NaN
+1993,9,Warren Buffett,6600000000.00,,NaN
+1992,1,Walton family,23800000000.00,,NaN
+1992,7,Bill Gates,6400000000.00,,NaN
+1991,1,Walton family,18500000000.00,,NaN
+1991,4,du Pont family,10000000000.00,,NaN
+1990,3,Walton family,13500000000.00,,NaN
+1990,4,du Pont family,10000000000.00,,NaN
+1989,3,Sam Walton & family,8700000000.00,,NaN
+1988,7,Sam Walton,6500000000.00,,NaN
