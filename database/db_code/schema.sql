@@ -1,256 +1,259 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/xA4WHS
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+------------- Schema for final group projet on college tuition/inflation/income... data --------------------
 
+-- Drop Tables as needed 
 
-CREATE TABLE "Tuition_87" (
-    "year" INT   NOT NULL,
-    "public" FLOAT   NOT NULL,
-    "private" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Tuition_87" PRIMARY KEY (
-        "year"
-     )
-);
+DROP TABLE "Income_ST"; 
+DROP TABLE "Income_US";
+DROP TABLE "Inflation_CPI_87";
+DROP TABLE "Inflation_CPI_All"; 
+DROP TABLE "Labor-Force_Participation";
+DROP TABLE "Student_Loan_Debt";
+DROP TABLE "Tuition_87";  
+DROP TABLE "Tuition_ST_94";
+DROP TABLE "Underemplyment"; 
+DROP TABLE "Unemployment";
+DROP TABLE "Wages_By_Ed";
+DROP TABLE "Wages_Top_Bottom";
+DROP TABLE "Wealth";
 
+DROP TABLE Income_ST; 
+DROP TABLE Income_US;
+DROP TABLE Inflation_CPI_87;
+DROP TABLE Inflation_CPI_All; 
+DROP TABLE Labor_Force_Participation;
+DROP TABLE Student_Loan_Debt;
+DROP TABLE Tuition_87;  
+DROP TABLE Tuition_ST_94;
+DROP TABLE Underemplyment; 
+DROP TABLE Unemployment;
+DROP TABLE Wages_By_Ed;
+DROP TABLE Wages_Top_Bottom;
+DROP TABLE Wealth;
 
-CREATE TABLE "Tuition_ST_94" (
-    "year" INT   NOT NULL,
-    "state" VARCHAR   NOT NULL,
-    "public_instate" FLOAT   NOT NULL,
-    "public_out_of_state" FLOAT ,
-    "private" FLOAT /* ,
-    CONSTRAINT "pk_Tuition_ST_94" PRIMARY KEY (
-        "year","state"
-     ) */
-);
-
-
-CREATE TABLE "Income_US" (
-    "year" INT   NOT NULL,
-    "avg_yearly_income_us" FLOAT   NOT NULL
-  , CONSTRAINT "pk_Income_US" PRIMARY KEY (
-       "year"
-  )
-);
-
-CREATE TABLE "Income_ST" (
-    "year" INT   NOT NULL,
-    "United_States" FLOAT   NOT NULL,
-    "Alabama" FLOAT   NOT NULL,
-    "Alaska" FLOAT   NOT NULL,
-    "Arizona" FLOAT   NOT NULL,
-    "Arkansas" FLOAT   NOT NULL,
-    "California" FLOAT   NOT NULL,
-    "Colorado" FLOAT   NOT NULL,
-    "Connecticut" FLOAT   NOT NULL,
-    "Delaware" FLOAT   NOT NULL,
-    "DC" FLOAT   NOT NULL,
-    "Florida" FLOAT   NOT NULL,
-    "Georgia" FLOAT   NOT NULL,
-    "Hawaii" FLOAT   NOT NULL,
-    "Idaho" FLOAT   NOT NULL,
-    "Illinois" FLOAT   NOT NULL,
-    "Indiana" FLOAT   NOT NULL,
-    "Iowa" FLOAT   NOT NULL,
-    "Kansas" FLOAT   NOT NULL,
-    "Kentucky" FLOAT   NOT NULL,
-    "Louisiana" FLOAT   NOT NULL,
-    "Maine" FLOAT   NOT NULL,
-    "Maryland" FLOAT   NOT NULL,
-    "Massachusetts" FLOAT   NOT NULL,
-    "Michigan" FLOAT   NOT NULL,
-    "Minnesota" FLOAT   NOT NULL,
-    "Mississippi" FLOAT   NOT NULL,
-    "Missouri" FLOAT   NOT NULL,
-    "Montana" FLOAT   NOT NULL,
-    "Nebraska" FLOAT   NOT NULL,
-    "Nevada" FLOAT   NOT NULL,
-    "New_Hampsire" FLOAT   NOT NULL,
-    "New_Jersey" FLOAT   NOT NULL,
-    "New_Mexico" FLOAT   NOT NULL,
-    "New_York" FLOAT   NOT NULL,
-    "North_Carolina" FLOAT   NOT NULL,
-    "North_Dakota" FLOAT   NOT NULL,
-    "Ohio" FLOAT   NOT NULL,
-    "Oklahoma" FLOAT   NOT NULL,
-    "Oregon" FLOAT   NOT NULL,
-    "Pennsylvania" FLOAT   NOT NULL,
-    "Rhode_Island" FLOAT   NOT NULL,
-    "South_Carolina" FLOAT   NOT NULL,
-    "South_Dakota" FLOAT   NOT NULL,
-    "Tennessee" FLOAT   NOT NULL,
-    "Texas" FLOAT   NOT NULL,
-    "Utah" FLOAT   NOT NULL,
-    "Vermont" FLOAT   NOT NULL,
-    "Virgina" FLOAT   NOT NULL,
-    "Washington" FLOAT   NOT NULL,
-    "West_Virgina" FLOAT   NOT NULL,
-    "Wisconsin" FLOAT   NOT NULL,
-    "Wyoming" FLOAT   NOT NULL
-    ,
-    CONSTRAINT "pk_Income_ST" PRIMARY KEY (
-        "year"
+-- Creat an average yearly state income table
+CREATE TABLE Income_ST (
+    year INT   NOT NULL,
+    United_States FLOAT   NOT NULL,
+    Alabama FLOAT   NOT NULL,
+    Alaska FLOAT   NOT NULL,
+    Arizona FLOAT   NOT NULL,
+    Arkansas FLOAT   NOT NULL,
+    California FLOAT   NOT NULL,
+    Colorado FLOAT   NOT NULL,
+    Connecticut FLOAT   NOT NULL,
+    Delaware FLOAT   NOT NULL,
+    DC FLOAT   NOT NULL,
+    Florida FLOAT   NOT NULL,
+    Georgia FLOAT   NOT NULL,
+    Hawaii FLOAT   NOT NULL,
+    Idaho FLOAT   NOT NULL,
+    Illinois FLOAT   NOT NULL,
+    Indiana FLOAT   NOT NULL,
+    Iowa FLOAT   NOT NULL,
+    Kansas FLOAT   NOT NULL,
+    Kentucky FLOAT   NOT NULL,
+    Louisiana FLOAT   NOT NULL,
+    Maine FLOAT   NOT NULL,
+    Maryland FLOAT   NOT NULL,
+    Massachusetts FLOAT   NOT NULL,
+    Michigan FLOAT   NOT NULL,
+    Minnesota FLOAT   NOT NULL,
+    Mississippi FLOAT   NOT NULL,
+    Missouri FLOAT   NOT NULL,
+    Montana FLOAT   NOT NULL,
+    Nebraska FLOAT   NOT NULL,
+    Nevada FLOAT   NOT NULL,
+    New_Hampsire FLOAT   NOT NULL,
+    New_Jersey FLOAT   NOT NULL,
+    New_Mexico FLOAT   NOT NULL,
+    New_York FLOAT   NOT NULL,
+    North_Carolina FLOAT   NOT NULL,
+    North_Dakota FLOAT   NOT NULL,
+    Ohio FLOAT   NOT NULL,
+    Oklahoma FLOAT   NOT NULL,
+    Oregon FLOAT   NOT NULL,
+    Pennsylvania FLOAT   NOT NULL,
+    Rhode_Island FLOAT   NOT NULL,
+    South_Carolina FLOAT   NOT NULL,
+    South_Dakota FLOAT   NOT NULL,
+    Tennessee FLOAT   NOT NULL,
+    Texas FLOAT   NOT NULL,
+    Utah FLOAT   NOT NULL,
+    Vermont FLOAT   NOT NULL,
+    Virgina FLOAT   NOT NULL,
+    Washington FLOAT   NOT NULL,
+    West_Virgina FLOAT   NOT NULL,
+    Wisconsin FLOAT   NOT NULL,
+    Wyoming FLOAT   NOT NULL,
+    CONSTRAINT PK_Income_ST PRIMARY KEY (
+        year
      ) 
 );
 
-
-
-CREATE TABLE "Wealth" (
-    "year" INT   NOT NULL,
-    "yearly_ranking" INT   NOT NULL,
-    "name" VARCHAR   NOT NULL,
-    "net_worth_USDn_billion" FLOAT   NOT NULL,
-    "age" int  ,
-    "wealth_source" VARCHAR  ,
-    CONSTRAINT "pk_Wealth" PRIMARY KEY (
-        "year","name"
-     )
+-- Creat an average yearly US income table
+CREATE TABLE Income_US (
+    year INT   NOT NULL,
+    avg_yearly_income_us FLOAT   NOT NULL,
+    CONSTRAINT PK_Income_US PRIMARY KEY (
+       year
+  )
 );
 
-CREATE TABLE "Inflation_CPI_All" (
-    "year" INT   NOT NULL,
-    "yearly_increase" FLOAT   NOT NULL,
-    "yearly_inflation" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Inflation_CPI_All" PRIMARY KEY (
+-- Creat an inflation/CPI table that goes back to 1987
+CREATE TABLE Inflation_CPI_87 (
+    year INT   NOT NULL,
+    yearly_increase FLOAT   NOT NULL,
+    yearly_inflation FLOAT   NOT NULL,
+    CONSTRAINT PK_Inflation_CPI_87 PRIMARY KEY (
         "year"
      )
 );
 
-CREATE TABLE "Inflation_CPI_87" (
-    "year" INT   NOT NULL,
-    "yearly_increase" FLOAT   NOT NULL,
-    "yearly_inflation" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Inflation_CPI_87" PRIMARY KEY (
-        "year"
+-- Creat an inflation/CPI table that goes back to 1914
+CREATE TABLE Inflation_CPI_All (
+    year INT   NOT NULL,
+    yearly_increase FLOAT   NOT NULL,
+    yearly_inflation FLOAT   NOT NULL,
+    CONSTRAINT PK_Inflation_CPI_All PRIMARY KEY (
+        year
      )
 );
 
-CREATE TABLE "Unemployment" (
-    "year" INT   NOT NULL,
+-- Creat a labor force participation table
+CREATE TABLE Labor_Force_Participation (
+    year INT   NOT NULL,
     "all" FLOAT   NOT NULL,
-    "bachelor_degree" FLOAT   NOT NULL,
-    "women_b_degree" FLOAT   NOT NULL,
-    "men_b_degree" FLOAT   NOT NULL,
-    "less_then_hs" FLOAT   NOT NULL,
-    "high_school" FLOAT   NOT NULL,
-    "some_college" FLOAT   NOT NULL,
-    "advanced_degree" FLOAT   NOT NULL,
-    "women" FLOAT   NOT NULL,
-    "men" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Unemployment" PRIMARY KEY (
-        "year"
+    less_then_hs FLOAT   NOT NULL,
+    high_school FLOAT   NOT NULL,
+    some_college FLOAT   NOT NULL,
+    bachelor_degree FLOAT   NOT NULL,
+    advanced_degree FLOAT   NOT NULL,
+    women FLOAT   NOT NULL,
+    men FLOAT   NOT NULL,
+    CONSTRAINT PK_Labor_Force_Participation PRIMARY KEY (
+        year
      )
 );
 
-CREATE TABLE "Wages_By_Ed" (
-    "year" INT   NOT NULL,
-    "less_then_HS" FLOAT   NOT NULL,
-    "high_school" FLOAT   NOT NULL,
-    "some_college" FLOAT   NOT NULL,
-    "bachelor_degree" FLOAT   NOT NULL,
-    "advanced_degree" FLOAT   NOT NULL,
-    "less_then_hs_share" FLOAT   NOT NULL,
-    "high_school_share" FLOAT   NOT NULL,
-    "some_college_share" FLOAT   NOT NULL,
-    "bachelor_degree_share" FLOAT   NOT NULL,
-    "advanced_degree_share" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Wages_By_Ed" PRIMARY KEY (
-        "year"
+-- Creat a student loan debt table
+CREATE TABLE Student_Loan_Debt (
+    year_grad INT   NOT NULL,
+    debt_at_grad FLOAT   NOT NULL,
+    adjusted_for_inflation FLOAT   NOT NULL,
+    CONSTRAINT PK_Student_Loan_Debt PRIMARY KEY (
+        year_grad
      )
 );
 
-CREATE TABLE "Wages_Top_Bottom" (
-    "year" INT   NOT NULL,
-    "bottom_90_avg" FLOAT   NOT NULL,
-    "90-95_avg" FLOAT   NOT NULL,
-    "95-99_avg" FLOAT   NOT NULL,
-    "90-99_avg" FLOAT   NOT NULL,
-    "top_5p_avg" FLOAT   NOT NULL,
-    "99-99-9_avg" FLOAT   NOT NULL,
-    "upper_0-1_avg" FLOAT   NOT NULL,
-    "99-100_avg" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Wages_Top_Bottom" PRIMARY KEY (
-        "year"
+-- Creat an average yearly tuition table that goes back to 1987
+CREATE TABLE Tuition_87 (
+	year INT  NOT NULL,	
+    public FLOAT   NOT NULL,
+    private FLOAT   NOT NULL,
+    CONSTRAINT PK_Tuition_87 PRIMARY KEY (
+        year
      )
 );
 
-CREATE TABLE "Labor-Force_Participation" (
-    "year" INT   NOT NULL,
+-- Creat an average yearly state tuition table that goes back to 1994
+CREATE TABLE Tuition_ST_94 (
+    year INT   NOT NULL,
+    state VARCHAR   NOT NULL,
+    public_instate FLOAT   NOT NULL,
+    public_out_of_state FLOAT ,
+    private FLOAT 
+);
+
+-- Creat an underemplyment table
+CREATE TABLE Underemplyment (
+    year INT   NOT NULL,
     "all" FLOAT   NOT NULL,
-    "less_then_hs" FLOAT   NOT NULL,
-    "high_school" FLOAT   NOT NULL,
-    "some_college" FLOAT   NOT NULL,
-    "bachelor_degree" FLOAT   NOT NULL,
-    "advanced_degree" FLOAT   NOT NULL,
-    "women" FLOAT   NOT NULL,
-    "men" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Labor-Force_Participation" PRIMARY KEY (
-        "year"
+    bachelor_degree FLOAT   NOT NULL,
+    women_b_degree FLOAT   NOT NULL,
+    men_b_degree FLOAT   NOT NULL,
+    less_then_hs FLOAT   NOT NULL,
+    high_school FLOAT   NOT NULL,
+    some_college FLOAT   NOT NULL,
+    advanced_degree FLOAT   NOT NULL,
+    women FLOAT   NOT NULL,
+    men FLOAT   NOT NULL,
+    CONSTRAINT PK_Underemplyment PRIMARY KEY (
+        year
      )
 );
 
-CREATE TABLE "Underemplyment" (
-    "year" INT   NOT NULL,
+-- Creat an unemployment table
+CREATE TABLE Unemployment (
+    year INT   NOT NULL,
     "all" FLOAT   NOT NULL,
-    "bachelor_degree" FLOAT   NOT NULL,
-    "women_b_degree" FLOAT   NOT NULL,
-    "men_b_degree" FLOAT   NOT NULL,
-    "less_then_hs" FLOAT   NOT NULL,
-    "high_school" FLOAT   NOT NULL,
-    "some_college" FLOAT   NOT NULL,
-    "advanced_degree" FLOAT   NOT NULL,
-    "women" FLOAT   NOT NULL,
-    "men" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Underemplyment" PRIMARY KEY (
-        "year"
+    bachelor_degree FLOAT   NOT NULL,
+    women_b_degree FLOAT   NOT NULL,
+    men_b_degree FLOAT   NOT NULL,
+    less_then_hs FLOAT   NOT NULL,
+    high_school FLOAT   NOT NULL,
+    some_college FLOAT   NOT NULL,
+    advanced_degree FLOAT   NOT NULL,
+    women FLOAT   NOT NULL,
+    men FLOAT   NOT NULL,
+    CONSTRAINT PK_Unemployment PRIMARY KEY (
+        year
      )
 );
 
-CREATE TABLE "Student_Loan_Debt" (
-    "year_grad" INT   NOT NULL,
-    "debt_at_grad" FLOAT   NOT NULL,
-    "adjusted_for_inflation" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Student_Loan_Debt" PRIMARY KEY (
-        "year_grad"
-     )
+-- Creat a wages by education table
+CREATE TABLE Wages_By_Ed (
+    year INT   NOT NULL,
+    less_then_HS FLOAT   NOT NULL,
+    high_school FLOAT   NOT NULL,
+    some_college FLOAT   NOT NULL,
+    bachelor_degree FLOAT   NOT NULL,
+    advanced_degree FLOAT   NOT NULL,
+    less_then_hs_share FLOAT   NOT NULL,
+    high_school_share FLOAT   NOT NULL,
+    some_college_share FLOAT   NOT NULL,
+    bachelor_degree_share FLOAT   NOT NULL,
+    advanced_degree_share FLOAT   NOT NULL,
+    CONSTRAINT PK_Wages_By_Ed PRIMARY KEY (year)
 );
 
+-- Creat a wages table that shows the top and bottom 10% of income data
+CREATE TABLE Wages_Top_Bottom (
+    year INT  NOT NULL,
+    avg_bottom_90 FLOAT   NOT NULL,
+    avg_90_95 FLOAT   NOT NULL,
+    avg_95_99 FLOAT   NOT NULL,
+    avg_90_99 FLOAT   NOT NULL,
+    avg_top_5 FLOAT   NOT NULL,
+    avg_99_99_9 FLOAT   NOT NULL,
+    avg_upper_0_1 FLOAT   NOT NULL,
+    avg_99_100 FLOAT   NOT NULL,
+    CONSTRAINT PK_Wages_Top_Bottom PRIMARY KEY (year)
+);
 
-/* 
-ALTER TABLE "Tuition_ST_94" ADD CONSTRAINT "fk_Tuition_ST_94_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
+-- Creat a wealth table
+CREATE TABLE Wealth (
+    year INT   NOT NULL,
+    yearly_ranking INT   NOT NULL,
+    name VARCHAR   NOT NULL,
+    net_worth_USDn_billion FLOAT  NOT NULL,
+    age INT,
+    wealth_source VARCHAR  ,
+    CONSTRAINT PK_Wealth PRIMARY KEY (year, name)
+);
 
-ALTER TABLE "Income_US" ADD CONSTRAINT "fk_Income_US_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
+-- Laod all the data from the clean data folder
 
-ALTER TABLE "Income_ST" ADD CONSTRAINT "fk_Income_ST_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Wealth" ADD CONSTRAINT "fk_Wealth_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Inflation_CPI_All" ADD CONSTRAINT "fk_Inflation_CPI_All_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Inflation_CPI_87" ADD CONSTRAINT "fk_Inflation_CPI_87_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Unemployment" ADD CONSTRAINT "fk_Unemployment_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Wages_By_Ed" ADD CONSTRAINT "fk_Wages_By_Ed_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Wages_Top_Bottom" ADD CONSTRAINT "fk_Wages_Top_Bottom_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Labor-Force_Participation" ADD CONSTRAINT "fk_Labor-Force_Participation_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Underemplyment" ADD CONSTRAINT "fk_Underemplyment_year" FOREIGN KEY("year")
-REFERENCES "Tuition_87" ("");
-
-ALTER TABLE "Student_Loan_Debt" ADD CONSTRAINT "fk_Student_Loan_Debt_year_grad" FOREIGN KEY("year_grad")
-REFERENCES "Tuition_87" ("");
-*/
-
+-- Make sure all your tables data has been read in 
+SELECT * FROM Income_ST; 
+SELECT * FROM Income_US;
+SELECT * FROM Inflation_CPI_87;
+SELECT * FROM Inflation_CPI_All; 
+SELECT * FROM Labor_Force_Participation;
+SELECT * FROM Student_Loan_Debt;
+SELECT * FROM Tuition_87;  
+SELECT * FROM Tuition_ST_94;
+SELECT * FROM Underemplyment; 
+SELECT * FROM Unemployment;
+SELECT * FROM Wages_By_Ed;
+SELECT * FROM Wages_Top_Bottom;
+SELECT * FROM Wealth;
