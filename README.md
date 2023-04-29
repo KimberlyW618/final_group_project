@@ -2,7 +2,7 @@
 
 ## Proposal Draft: 
 
-We have a four people group.The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
+We have a four people group. The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
  
 Our null hypothesis is that since income has not risen according to inflation, the cost of college should not have either, the cost of college should not be related to income.
  
@@ -29,59 +29,68 @@ Additionally we will talk about the unemployment rate and how that factors in an
  
 ### Software:
 - Jupyter Notebook
-- Visual Studio Code (Version: 1.76.2)
+- Visual Studio Code 
 - Google Chrome
-- pgAdmin 4(version 6.15(4280.88))
+- pgAdmin4
 
  
 ### Languages:
-- Python (libraries: pandas)
+- Python (libraries: pandas, numpy, os, glob, datetime, splinter, bs4, webdriver_manager.chrome, re)
 - SQL
-- HTML
+- R
+- Tableau
 
 ### Raw Data & Sources
 These are the links and sources to the data we started with.  
-- Tuition
+- Tuition_87  & Tuition_ST_94 [raw_data/tuition_data](raw_data/tuition_data)
     - Source (type):
-- Cost of living
+- Income_US & Income_ST [raw_data/income.xlsx](raw_data/income.xlsx)
     - Source (type):
-- Income 
+- Wealth [raw_data/Wealth.csv](raw_data/Wealth.csv)
     - Source (type):
-- Wealth 
-    - Source (type):
-- Inflation 
-    - Source (type):
-- Unemployment 
-    - Source (type):
-- Labor-Force_Participation 
-    - Source (type):
-- Wages_Top_Bottom  
-    - Source (type):
-- Wages_By_Ed  
-    - Source (type):
+- Inflation_CPI_All & Inflation_CPI_87 API link https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913- 
+    - Source (API Call): 
+- Unemployment [raw_data/Unemployment.csv](raw_data/Unemployment.csv)
+    - Source (csv):
+- Labor-Force_Participation [raw_data/Labor-Force_Participation.csv](raw_data/Labor-Force_Participation.csv)
+    - Source (csv):
+- Wages_Top_Bottom  [raw_data/Wages_Top_Bottem.csv](raw_data/Wages_Top_Bottem.csv)
+    - Source (csv):
+- Wages_By_Ed [raw_data/Wages_By_ed.csv](raw_data/Wages_By_ed.csv) 
+    - Source (csv):
+- Underemployment [raw_data/Underemployment.csv](raw_data/Underemployment.csv)
+    - Source (csv):
+- Student_Loan_Debt [raw_data/Student_Loan_Debt.xlsx](raw_data/Student_Loan_Debt.xlsx)
+    - Source (xlsx):
+
 
  
 ### Clean Data Used 
 This data we have cleaned and manipulated so it will work for our project.   
-- Tuition (csv): 
-- Cost of living (csv): 
-- Income (csv): 
-- Wealth (csv): 
-- Inflation (csv): 
-- Unemployment (csv): 
-- Labor-Force_Participation (csv): 
-- Wages_Top_Bottom (csv): 
-- Wages_By_Ed (csv):
+- Tuition_87 (csv) [clean_data/Tuition_87.csv](clean_data/Tuition_87.csv)
+- Tuition_ST_94 (csv) [clean_data/Tuition_ST_94.csv](clean_data/Tuition_ST_94.csv)
+- Income_US (csv) [clean_data/Income_US.csv](clean_data/Income_US.csv)
+- Income_ST (csv) [clean_data/Income_ST.csv](clean_data/Income_ST.csv)
+- Wealth (csv) [clean_data/Wealth.csv[(clean_data/Wealth.csv)
+- Inflation_CPI_All (csv) [clean_data/Inflation_CPI_All.csv](clean_data/Inflation_CPI_All.csv)
+- Inflation_CPI_87 (csv) [clean_data/Inflation_CPI_87.csv](clean_data/Inflation_CPI_87.csv)
+- Unemployment (csv) [clean_data/Unemployment.csv](clean_data/Unemployment.csv)
+- Labor-Force_Participation (csv) [clean_data/Labor-Force_Participation.csv](clean_data/Labor-Force_Participation.csv)
+- Wages_Top_Bottom (csv) [clean_data/Wages_Top_Bottom.csv](clean_data/Wages_Top_Bottom.csv)
+- Wages_By_Ed (csv) [clean_data/Wages_By_Ed.csv](clean_data/Wages_By_Ed.csv)
+- Underemployment (csv) [clean_data/Underemployment.csv]clean_data/Underemployment.csv)
+- Student_Loan_Debt (csv) [clean_data/Student_Loan_Debt.csv](clean_data/Student_Loan_Debt.csv)
+
 
 
 # Results:  
 
-## Phase 1 Deliverables
-- Python & HTML:[code](code)
-- Database Prep: [database]
-- ERD: [database/ERD](database/ERD)
-### ERD Image
+- Python: [code](code)
+    -  We are prepping all the data with python in jupiter notebook. 
+- Database: [database](database)
+    - The data base in postgres with SQL code expanded with joined tables. 
+    - ERD: [database/ERD](database/ERD)
+        - ERD Image
 ![database/ERD/ERD_db_mockup.png](database/ERD/ERD_db_mockup.png)
-
-
+ 
  
