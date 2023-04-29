@@ -1,4 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/xA4WHS
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
@@ -12,23 +12,25 @@ CREATE TABLE "Tuition_87" (
      )
 );
 
+
 CREATE TABLE "Tuition_ST_94" (
     "year" INT   NOT NULL,
     "state" VARCHAR   NOT NULL,
     "public_instate" FLOAT   NOT NULL,
-    "public_out_of_state" FLOAT   NOT NULL,
-    "private" FLOAT   NOT NULL,
+    "public_out_of_state" FLOAT ,
+    "private" FLOAT /* ,
     CONSTRAINT "pk_Tuition_ST_94" PRIMARY KEY (
-        "year"
-     )
+        "year","state"
+     ) */
 );
+
 
 CREATE TABLE "Income_US" (
     "year" INT   NOT NULL,
-    "avg_yearly_income_us" FLOAT   NOT NULL,
-    CONSTRAINT "pk_Income_US" PRIMARY KEY (
-        "year"
-     )
+    "avg_yearly_income_us" FLOAT   NOT NULL
+  , CONSTRAINT "pk_Income_US" PRIMARY KEY (
+       "year"
+  )
 );
 
 CREATE TABLE "Income_ST" (
@@ -84,21 +86,24 @@ CREATE TABLE "Income_ST" (
     "Washington" FLOAT   NOT NULL,
     "West_Virgina" FLOAT   NOT NULL,
     "Wisconsin" FLOAT   NOT NULL,
-    "Wyoming" FLOAT   NOT NULL,
+    "Wyoming" FLOAT   NOT NULL
+    ,
     CONSTRAINT "pk_Income_ST" PRIMARY KEY (
         "year"
-     )
+     ) 
 );
+
+
 
 CREATE TABLE "Wealth" (
     "year" INT   NOT NULL,
     "yearly_ranking" INT   NOT NULL,
     "name" VARCHAR   NOT NULL,
     "net_worth_USDn_billion" FLOAT   NOT NULL,
-    "age" VARCHAR   NOT NULL,
-    "wealth_source" VARCHAR   NOT NULL,
+    "age" int  ,
+    "wealth_source" VARCHAR  ,
     CONSTRAINT "pk_Wealth" PRIMARY KEY (
-        "year"
+        "year","name"
      )
 );
 
@@ -210,9 +215,8 @@ CREATE TABLE "Student_Loan_Debt" (
      )
 );
 
-ALTER TABLE "Tuition_87" ADD CONSTRAINT "fk_Tuition_87_year" FOREIGN KEY("year")
-REFERENCES "Tuition_ST_94" ("");
 
+/* 
 ALTER TABLE "Tuition_ST_94" ADD CONSTRAINT "fk_Tuition_ST_94_year" FOREIGN KEY("year")
 REFERENCES "Tuition_87" ("");
 
@@ -248,4 +252,5 @@ REFERENCES "Tuition_87" ("");
 
 ALTER TABLE "Student_Loan_Debt" ADD CONSTRAINT "fk_Student_Loan_Debt_year_grad" FOREIGN KEY("year_grad")
 REFERENCES "Tuition_87" ("");
+*/
 
