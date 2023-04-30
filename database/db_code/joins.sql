@@ -44,3 +44,8 @@ JOIN income_st AS inc_st
 ON stu.year_grad = inc_st.year
 ORDER BY inc_st.year;
 
+SELECT * FROM income_us_inflation_87;
+SELECT * FROM income_st_inflation_87;
+SELECT * FROM stu_debt_tuition_87; 
+SELECT * FROM stu_debt_inc_us;
+SELECT * FROM stu_debt_inc_st;
