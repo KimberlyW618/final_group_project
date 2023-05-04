@@ -4,11 +4,8 @@
 ## Overview
 In this project we are analyzing college tuition data to investigate a possible correlation between the cost of college, inflation, income and a number of other economical factors. We seek to observe the pitch of the rise in each data set so we can come to some useful conclusions. 
  
-Null Hypothesis: Since income has not risen according to inflation, the cost of college should not have either and therefore the cost of college should not be related to income.
- 
-Alternative Hypothesis: Since college financial aid is all income based, tuition should have risen in accordance with income and therefore, they are independent of inflation.
-
-
+- Null Hypothesis: Due to the rise in inflation, and historical tuition inflation data, we would expect that tuition has followed the rise of inflation. 
+- Alternative Hypothesis: Since college financial aid is all income based, and income has not risen in accordance with inflation, neither should have tuition.
  
 ### Group Members:
 - Alex
@@ -78,9 +75,31 @@ This data we have cleaned and manipulated so it will work for our project.
  
 ## Images 
 
-## Summary of Findings  
+## Summary of Findings 
+
+- We wanted to see if there was a correlation between the rise in tuition and the rise in income and inflation
+- Hypothesis: Since income has not risen according to inflation, the cost of college should not have either, therefore the cost of college should not be related to income.
+- Using first t-test we looked at the correlation between tuition (public and private) vs what they should be based on inflation and saw that they were 
+
+- Null Hypothesis: Due to the rise in inflation, and historical tuition inflation data, we would expect that tuition has followed the rise of inflation. 
+- Alternative Hypothesis: Since college financial aid is all income based, and income has not risen in accordance with inflation, neither should have tuition.
+
+- Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we reject the null hypothesis and can clearly see from the graphs that tuition has not risen in accordance with inflation.
 
 
+### Final Thoughts
+
+- During this project we learned how to successfully conceptualize and execute a project from start to finish.
+Challenges
+- Working with GitHub and figuring out the branches
+ - Finding data sources that had what we needed
+ - Adjusting for inflation
+- Successes
+ - Performed web scraping
+ - Combined many excel sheets into one dataframe
+ - Loaded dataframes into PgAdmin and performed  joins
+ - Used joins to perform T-Test and Linear regression analysis 
+ - Created different graphs and charts in Tableau that showed us an overall big picture 
 
 
 ## Proposal Draft: 
