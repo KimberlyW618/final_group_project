@@ -51,23 +51,25 @@ These are the links and sources to the data we started with.
     - Source [Link](https://www.kaggle.com/datasets/belayethossainds/the-worlds-billionaires-dataset-19872022): The world's Billionaires Dataset 1987-2022
         
 
-## Data Prep [Code](code/python)
+## Data Prep 
+[Code](code/python)
  
 ### Clean Data 
 This data we have cleaned and manipulated so it will work for our project.   
 [Clean Data](data/clean_data)
 
-## Data Base [Code](code/SQL)
+## Data Base 
+[Code](code/SQL)
 
-## Statistical Analysis [Code](code/R)
+## Statistical Analysis 
+[Code](code/R)
  
 # Results: 
 
 ## Decks
-- [Presentation Google Slide Deck](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
-- Webpage with Tableau Story
- - HTML [Code](code/html/college_analysis_tableau_deck_webpage.html)
-- [Tableau Public] [Link](https://public.tableau.com/shared/NMYT2KDHM?:display_count=n&:origin=viz_share_link)
+- Presentation [Google Slide Deck:](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
+- Webpage with Tableau Story: HTML [Code](code/html/college_analysis_tableau_deck_webpage.html)
+- Tableau Public [Link](https://public.tableau.com/shared/NMYT2KDHM?:display_count=n&:origin=viz_share_link)
 
 ## Summary of Findings  
 
@@ -84,9 +86,9 @@ Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we 
 
 ![Image](images/ERD/ERD_db_mockup.png)
 
-![imagesfindings/public_map](imagesfindings/public_map)
+![images/findings/public_map.png](images/findings/public_map.png)
 
-![images/findings/share_byEd.png](images/findings/share_byEd.png)
+![images/findings/share__byEd.png](images/findings/share__byEd.png)
 
 ![images/findings/unemplyment.png](images/findings/unemplyment.png)
 
@@ -118,9 +120,9 @@ During this project we learned how to successfully conceptualize and execute a p
 
 
 
+-----------------------------------------
 
-
-## Proposal Draft: 
+### Project Proposal: 
 
 We have a four people group. The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
  
@@ -128,9 +130,9 @@ Our null hypothesis is that since income has not risen according to inflation, t
  
 Our alternative hypothesis is that since college financial aid is all income based it should have risen in accordance with income and therefore, they are independent of inflation.
  
- We will also look at the different tiers of universities/colleges and salaries guaranteed after graduation and how that relates to income and inflation. 
+We will also look at the different tiers of universities/colleges and salaries guaranteed after graduation and how that relates to income and inflation. 
 
-Graphs to create:
+#### Graphs to create:
 Look at different geographies and then compare the data of cost of living and salaries when compared to schools in that area
 Map looking at cost of living when compared to income level (wealth) and cost of college across US
 Looking at income vs. wealth and how that compares to the rise. 
