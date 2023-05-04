@@ -19,12 +19,12 @@ Alternative Hypothesis: Since college financial aid is all income based, tuition
 ## Resources
  
 ### Software:
-Visual Studio Code 
-Google Chrome
-pgAdmin 4
-Jupyter Notebook
-R Studio
-Tableau Desktop
+- Visual Studio Code 
+- Google Chrome
+- pgAdmin 4
+- Jupyter Notebook
+- R Studio
+- Tableau Desktop
 
  
 ### Languages:
@@ -38,16 +38,24 @@ Tableau Desktop
 ### Raw Data Sources
 These are the links and sources to the data we started with.  
 [Raw Data](data/raw_data)
-- Income_US & Income_ST -  Source (type):
-- Inflation - Source (API Call): [API link](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-) 
-- Labor-Force_Participation - Source (csv):
-- Underemployment - Source (csv):
-- Unemployment - Source (csv):
-- Student_Loan_Debt - Source (xlsx):
-- Tuition_87  & Tuition_ST_94 - Source (type):
-- Wages_Top_Bottom - Source (csv):
-- Wages_By_Ed - Source (csv):
-- Wealth - Source(type):
+- Income_US & Income_ST (csv):
+    - Source: United States Census Bureau 
+    - [Link](https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html)
+- Inflation (API Call)
+    - Source: Federal reserve Bank of Minneapolis
+    - [API link](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-) 
+- Unemployment (csv) , Underemployment (csv), Wages_Top_Bottom (csv), Wages_By_Ed (csv), Labor-Force_Participation (csv)
+    - Source: Economic Policy Institute 
+    - [Link](https://www.epi.org/data/) 
+- Student_Loan_Debt (excel):
+    - Source: Education Data Initiative
+    - [Link](https://educationdata.org/average-student-loan-debt-by-year) 
+- Tuition_87  & Tuition_ST_94 (csv + excel):
+    - Source: IES > NCES National Center for Education Statistic 
+    - [Link](https://nces.ed.gov/programs/digest/d21/tables/dt21_330.10.asp?current=yes) 
+- Wealth (csv)
+    - Source: The world's Billionaires Dataset 1987-2022
+    - [Link](https://www.kaggle.com/datasets/belayethossainds/the-worlds-billionaires-dataset-19872022)     
 
 ## Data Prep [Code](code)
  
@@ -62,6 +70,11 @@ This data we have cleaned and manipulated so it will work for our project.
 ![Image](database/ERD/ERD_db_mockup.png)
  
 # Results: 
+
+## Decks
+- [Presentation Google Slide Deck](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
+- [Webpage with Tableau Story]()
+- [Tableau Public] [Link](https://public.tableau.com/shared/NMYT2KDHM?:display_count=n&:origin=viz_share_link)
  
 ## Images 
 
