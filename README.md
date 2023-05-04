@@ -4,10 +4,9 @@
 ## Overview
 In this project we are analyzing college tuition data to investigate a possible correlation between the cost of college, inflation, income and a number of other economical factors. We seek to observe the pitch of the rise in each data set so we can come to some useful conclusions. 
  
-Null Hypothesis: Since income has not risen according to inflation, the cost of college should not have either and therefore the cost of college should not be related to income.
+Null Hypothesis: If income has not risen according to inflation, the cost of college should not have either and therefore the cost of college should not be related to income.
  
 Alternative Hypothesis: Since college financial aid is all income based, tuition should have risen in accordance with income and therefore, they are independent of inflation.
-
 
  
 ### Group Members:
@@ -39,46 +38,84 @@ Alternative Hypothesis: Since college financial aid is all income based, tuition
 These are the links and sources to the data we started with.  
 [Raw Data](data/raw_data)
 - Income_US & Income_ST (csv):
-    - Source: United States Census Bureau 
-    - [Link](https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html)
+    - Source [Link](https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html): United States Census Bureau
 - Inflation (API Call)
-    - Source: Federal reserve Bank of Minneapolis
-    - [API link](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-) 
+    - Source [API link](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-): Federal reserve Bank of Minneapolis 
 - Unemployment (csv) , Underemployment (csv), Wages_Top_Bottom (csv), Wages_By_Ed (csv), Labor-Force_Participation (csv)
-    - Source: Economic Policy Institute 
-    - [Link](https://www.epi.org/data/) 
+    - Source [Link](https://www.epi.org/data/): Economic Policy Institute 
 - Student_Loan_Debt (excel):
-    - Source: Education Data Initiative
-    - [Link](https://educationdata.org/average-student-loan-debt-by-year) 
+    - Source [Link](https://educationdata.org/average-student-loan-debt-by-year): Education Data Initiative
 - Tuition_87  & Tuition_ST_94 (csv + excel):
-    - Source: IES > NCES National Center for Education Statistic 
-    - [Link](https://nces.ed.gov/programs/digest/d21/tables/dt21_330.10.asp?current=yes) 
+    - Source [Link](https://nces.ed.gov/programs/digest/d21/tables/dt21_330.10.asp?current=yes): IES > NCES National Center for Education Statistic 
 - Wealth (csv)
-    - Source: The world's Billionaires Dataset 1987-2022
-    - [Link](https://www.kaggle.com/datasets/belayethossainds/the-worlds-billionaires-dataset-19872022)     
+    - Source [Link](https://www.kaggle.com/datasets/belayethossainds/the-worlds-billionaires-dataset-19872022): The world's Billionaires Dataset 1987-2022
+        
 
-## Data Prep [Code](code)
+## Data Prep [Code](code/python)
  
 ### Clean Data 
 This data we have cleaned and manipulated so it will work for our project.   
 [Clean Data](data/clean_data)
 
+## Data Base [Code](code/SQL)
 
-## Data Base [Code](database/db_code)
-
-[ERD:](database/ERD)
-![Image](database/ERD/ERD_db_mockup.png)
+## Statistical Analysis [Code](code/R)
  
 # Results: 
 
 ## Decks
 - [Presentation Google Slide Deck](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
-- [Webpage with Tableau Story]()
+- Webpage with Tableau Story
+ - HTML [Code](code/html/college_analysis_tableau_deck_webpage.html)
 - [Tableau Public] [Link](https://public.tableau.com/shared/NMYT2KDHM?:display_count=n&:origin=viz_share_link)
- 
-## Images 
 
 ## Summary of Findings  
+
+Inthis anlaysis we looked to see if there was a correlation between the rise in tuition and the rise in income and inflation. Using first t-test we looked at the correlation between tuition (public and private) vs what they should be based on inflation and saw that they were. 
+
+Null Hypothesis: Due to the rise in inflation, and historical tuition inflation data, we would expect that tuition has followed the rise of inflation. 
+
+Alternative Hypothesis: Since college financial aid is all income based, and income has not risen in accordance with inflation, neither should have tuition.
+
+Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we reject the null hypothesis and can clearly see from the graphs that tuition has not risen in accordance with inflation.
+
+## Images 
+[Image File](images)
+
+![Image](images/ERD/ERD_db_mockup.png)
+
+![imagesfindings/public_map](imagesfindings/public_map)
+
+![images/findings/share_byEd.png](images/findings/share_byEd.png)
+
+![images/findings/unemplyment.png](images/findings/unemplyment.png)
+
+![images/findings/T.Inc.Inf+cpi.png](images/findings/T.Inc.Inf+cpi.png)
+
+![images/findings/avgI_Wnetw.png](images/findings/avgI_Wnetw.png)
+
+![images/findings/T_I_forcast.png](images/findings/T_I_forcast.png)
+
+![images/findings/T-test.png](images/findings/T-test.png)
+
+
+## Final Thoughts 
+
+During this project we learned how to successfully conceptualize and execute a project from start to finish.
+- Challenges
+ - Working with GitHub and figuring out the branches
+ - Finding data sources that had what we needed
+ - Adjusting for inflation
+- Successes
+ - Performed web scraping
+ - Combined many excel sheets into one dataframe
+ - Loaded dataframes into PgAdmin and performed  joins
+ - Used joins to perform T-Test and Linear regression analysis 
+ - Created different graphs and charts in Tableau that showed us an overall big picture 
+
+
+
+
 
 
 
