@@ -81,6 +81,7 @@ Alternative Hypothesis: Since college financial aid is all income based, and inc
 
 Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we reject the null hypothesis and can clearly see from the graphs that tuition has not risen in accordance with inflation.
 
+
 ## Images 
 [Image File](images)
 
