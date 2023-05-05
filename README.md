@@ -74,13 +74,14 @@ This data we have cleaned and manipulated so it will work for our project.
 
 ## Summary of Findings  
 
-Inthis anlaysis we looked to see if there was a correlation between the rise in tuition and the rise in income and inflation. Using first t-test we looked at the correlation between tuition (public and private) vs what they should be based on inflation and saw that they were. 
+In this analysis we sought to see if there is a correlation between the rise in tuition, average income and the ever growing economic factor, inflation.
+Using first a t-test, we looked at the correlation between tuition (public and private) verses what they should be based on inflation and saw that they were indeed growing at different rates. 
 
-Null Hypothesis: Due to the rise in inflation, and historical tuition inflation data, we would expect that tuition has followed the rise of inflation. 
-
-Alternative Hypothesis: Since college financial aid is all income based, and income has not risen in accordance with inflation, neither should have tuition.
+- Null Hypothesis: Due to the rise in inflation, and historical tuition inflation data, we would expect that tuition has followed the rise of inflation. 
+- Alternative Hypothesis: Since college financial aid is all income based, and income has not risen in accordance with inflation, neither should have tuition.
 
 Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we reject the null hypothesis and can clearly see from the graphs that tuition has not risen in accordance with inflation.
+
 
 
 ## Images 
