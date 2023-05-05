@@ -69,7 +69,7 @@ This data we have cleaned and manipulated so it will work for our project.
 ## Decks
 - Presentation [Google Slide Deck:](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
 - Webpage with Tableau Story: HTML [Code](code/html/college_analysis_tableau_deck_webpage.html)
-- Tableau Public [Link](https://public.tableau.com/shared/NMYT2KDHM?:display_count=n&:origin=viz_share_link)
+- Tableau Public [Link](https://public.tableau.com/views/CollegeTuitionEconomicAnalysis/Story?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Summary of Findings  
 
@@ -87,6 +87,8 @@ Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we 
 ![Image](images/ERD/ERD_db_mockup.png)
 
 ![images/findings/public_map.png](images/findings/public_map.png)
+
+![images/findings/private_map.png]images/findings/private_map.png)
 
 ![images/findings/share__byEd.png](images/findings/share__byEd.png)
 
