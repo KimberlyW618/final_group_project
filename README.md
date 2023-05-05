@@ -9,7 +9,7 @@ Null Hypothesis: If income has not risen according to inflation, the cost of col
 Alternative Hypothesis: Since college financial aid is all income based, tuition should have risen in accordance with income and therefore, they are independent of inflation.
 
  
-### Group Members:
+### Group Members
 - Alex
 - Zain
 - Yawen
@@ -17,7 +17,7 @@ Alternative Hypothesis: Since college financial aid is all income based, tuition
  
 ## Resources
  
-### Software:
+### Software
 - Visual Studio Code 
 - Google Chrome
 - pgAdmin 4
@@ -26,7 +26,7 @@ Alternative Hypothesis: Since college financial aid is all income based, tuition
 - Tableau Desktop
 
  
-### Languages:
+### Languages
 - Python (libraries: pandas, numpy, os, glob, datetime, splinter, bs4, webdriver_manager.chrome, re)
 - HTML
 - SQL
@@ -50,21 +50,22 @@ These are the links and sources to the data we started with.
 - Wealth (csv)
     - Source [Link](https://www.kaggle.com/datasets/belayethossainds/the-worlds-billionaires-dataset-19872022): The world's Billionaires Dataset 1987-2022
         
+## The Work
 
-## Data Prep 
+### Data Prep 
 [Code](code/python)
  
 ### Clean Data 
 This data we have cleaned and manipulated so it will work for our project.   
 [Clean Data](data/clean_data)
 
-## Data Base 
+### Data Base 
 [Code](code/SQL)
 
-## Statistical Analysis 
+### Statistical Analysis 
 [Code](code/R)
  
-# Results: 
+# Results 
 
 ## Decks
 - Presentation [Google Slide Deck:](https://docs.google.com/presentation/d/1IC6qWiqES6jHyChqCqxr8XXtWpde1bSQHRc4bYMaRjk/edit?usp=sharing)
@@ -125,7 +126,7 @@ Successes
 
 -----------------------------------------
 
-### Project Proposal: 
+### Project Proposal 
 
 We have a four people group. The project that we have decided on is to look at the possible correlation between the cost of college, inflation, and income. We will also look at cost of living in different areas as well as look at different economic classes and see if their rise in income and cost of living matches the others.
  
