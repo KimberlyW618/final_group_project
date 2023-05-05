@@ -108,11 +108,15 @@ Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we 
 ## Final Thoughts 
 
 During this project we learned how to successfully conceptualize and execute a project from start to finish.
+
 Challenges
+
 - Working with GitHub and figuring out the branches
 - Finding data sources that had what we needed
 - Adjusting for inflation
+
 Successes
+
 - Performed web scraping
 - Combined many excel sheets into one dataframe
 - Loaded dataframes into PgAdmin and performed  joins
