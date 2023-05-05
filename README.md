@@ -88,9 +88,9 @@ Based on the t-test p-values being less than 0.1, and the R^2 value of 0.98, we 
 
 ![images/findings/public_map.png](images/findings/public_map.png)
 
-![images/findings/private_map.png]images/findings/private_map.png)
+![images/findings/private_map.png](images/findings/private_map.png)
 
-![images/findings/share__byEd.png](images/findings/share__byEd.png)
+![images/findings/share_byEd.png](images/findings/share_byEd.png)
 
 ![images/findings/unemplyment.png](images/findings/unemplyment.png)
 
